@@ -23,14 +23,20 @@ You can use this dataset to explore various machine learning algorithms and regr
 
 To get started, you can follow these steps:
 
-Data Preprocessing: Since the data requires some cleaning and preprocessing, you can explore techniques like data imputation, handling categorical variables (e.g., ocean_proximity), and feature scaling.
+### Data Preprocessing: 
+Since the data requires some cleaning and preprocessing, you can explore techniques like data imputation, handling categorical variables (e.g., ocean_proximity), and feature scaling.
 
-### Data Exploration: Conduct exploratory data analysis to gain insights into the distribution of variables, correlations, and potential outliers.
+### Data Exploration: 
+exploratory data analysis to gain insights into the distribution of variables, correlations, and potential outliers.
 
-### Feature Engineering: Consider creating new features that might improve the predictive performance of your model.
+### Feature Engineering: 
+Consider creating new features that might improve the predictive performance of your model.
 
-### Model Building: Utilize various regression models, such as Linear Regression, Decision Trees, Random Forest, Gradient Boosting, etc. You already mentioned using a RandomForest Regressor, but don't hesitate to experiment with other algorithms.
+### Model Building: 
+Utilize various regression models, such as Linear Regression, Decision Trees, Random Forest, Gradient Boosting, etc. You already mentioned using a RandomForest Regressor, but don't hesitate to experiment with other algorithms.
 
-### Model Evaluation: Assess the performance of your model using appropriate evaluation metrics like Mean Squared Error (MSE) or Root Mean Squared Error (RMSE).
+### Model Evaluation: 
+Assess the performance of your model using appropriate evaluation metrics like Mean Squared Error (MSE) or Root Mean Squared Error (RMSE).
 
-### Predictions: Once you have trained your model, you can use it to predict the median house values for new data points.
+### Predictions:
+Once you have trained your model, you can use it to predict the median house values for new data points.
