@@ -1,19 +1,36 @@
-# Irish Song Poetry Generation Model
+# About the Dataset
+Welcome to the California Housing Price Prediction dataset! This dataset is used in the second chapter of Aurélien Géron's book, 'Hands-On Machine learning with Scikit-Learn and TensorFlow.' It serves as an excellent introduction to implementing machine learning algorithms as it requires rudimentary data cleaning, has an easily understandable list of variables, and sits at an optimal size between being too toyish and too cumbersome.
 
-Welcome to the Irish Song Poetry Generation Model! This open-source project aims to train a model that can learn from a collection of Irish songs and generate poetic lyrics inspired by the rich cultural heritage of Ireland. The goal is to create a tool that can generate original and captivating poetry, capturing the essence of Irish music and storytelling.
+The data contains information from the 1990 California census, focusing on the houses found in various California districts and some summary statistics about them. Although it may not help you predict current housing prices like the Zillow Zestimate dataset, it provides an accessible introductory dataset for teaching people about the basics of machine learning.
 
-## Model Overview
+## Content
+The dataset contains the following variables:
 
-The Irish Song Poetry Generation Model is built using TensorFlow, a powerful open-source machine learning framework. We utilize various components from the TensorFlow library to construct a deep learning model capable of generating Irish song poetry.
+longitude: Longitude of the district.
+latitude: Latitude of the district.
+housing_median_age: Median age of houses in the district.
+total_rooms: Total number of rooms in the district's houses.
+total_bedrooms: Total number of bedrooms in the district's houses.
+population: Total population in the district.
+households: Total number of households in the district.
+median_income: Median income of households in the district.
+median_house_value: Median value of houses in the district (target variable).
+ocean_proximity: Proximity of the district to the ocean.
+Please note that the data is not fully cleaned, so some preprocessing steps will be required before building a machine learning model.
 
-The model architecture consists of several key components:
+## Using the Dataset
+You can use this dataset to explore various machine learning algorithms and regression techniques. In your research, you mentioned that you used an ensemble RandomForest Regressor to build your model. If you're new to machine learning, this dataset is an ideal starting point to gain hands-on experience.
 
-1. **Embedding Layer**: This layer converts text input into dense numerical vectors, representing the semantic meaning of each word or sequence of words. It helps the model understand the contextual relationships between different words in the Irish songs.
+To get started, you can follow these steps:
 
-2. **Bidirectional LSTM Layer**: LSTM stands for Long Short-Term Memory, a type of recurrent neural network (RNN) capable of capturing long-term dependencies in sequences. The bidirectional nature of the LSTM allows the model to consider both past and future contexts when generating poetry, enhancing its ability to create coherent and meaningful lyrics.
+Data Preprocessing: Since the data requires some cleaning and preprocessing, you can explore techniques like data imputation, handling categorical variables (e.g., ocean_proximity), and feature scaling.
 
-3. **Dense Layer**: The dense layer is responsible for the final prediction in the model. It maps the hidden representations from the LSTM layer to the appropriate output format, generating the poetic lyrics based on the learned patterns and structures.
+### Data Exploration: Conduct exploratory data analysis to gain insights into the distribution of variables, correlations, and potential outliers.
 
-4. **Tokenizer**: We use the Tokenizer from TensorFlow to preprocess the input text, converting it into numerical representations that the model can understand. This step involves tokenizing the text into individual words, assigning unique numerical IDs to each word, and transforming the text into sequences of these numerical IDs.
+### Feature Engineering: Consider creating new features that might improve the predictive performance of your model.
 
-5. **Adam Optimizer**: The model utilizes the Adam optimizer, a popular optimization algorithm, to adjust the model's internal parameters during the training process. This optimizer helps the model converge to better solutions and improve the quality of the generated poetry.
+### Model Building: Utilize various regression models, such as Linear Regression, Decision Trees, Random Forest, Gradient Boosting, etc. You already mentioned using a RandomForest Regressor, but don't hesitate to experiment with other algorithms.
+
+### Model Evaluation: Assess the performance of your model using appropriate evaluation metrics like Mean Squared Error (MSE) or Root Mean Squared Error (RMSE).
+
+### Predictions: Once you have trained your model, you can use it to predict the median house values for new data points.
